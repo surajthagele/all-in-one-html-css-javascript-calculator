@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Premium Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calculator-container">
+    <header class="calculator-header">
+      <h1 class="result" aria-live="polite">0</h1>
+      <p class="history-label" id="historyLabel">Ready to calculate</p>
+    </header>
+
+    <section class="calculator-body">
+      <div class="input-group">
+        <label for="num1" class="sr-only">First Number</label>
+        <input type="number" id="num1" class="num1" placeholder="Enter first number" aria-label="First Number" />
+      </div>
+
+      <div class="input-group">
+        <label for="selectOp" class="sr-only">Operator</label>
+        <select id="selectOp" aria-label="Select Operator">
+          <option value="plus">+</option>
+          <option value="minus">-</option>
+          <option value="divide">/</option>
+          <option value="multiply">×</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="num2" class="sr-only">Second Number</label>
+        <input type="number" id="num2" class="num2" placeholder="Enter second number" aria-label="Second Number" />
+      </div>
+
+      <button id="btn" class="submit-btn" aria-label="Calculate">Calculate</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

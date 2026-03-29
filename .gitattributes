@@ -1,2 +1,21 @@
-# Auto detect text files and perform LF normalization
+# Set default behavior to automatically normalize line endings
 * text=auto
+
+# Force LF (Unix style) for specific web text files
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Denote specific multimedia to prevent Git corruption for binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.mp4 binary
+
+# Exclude .agent Antigravity files from GitHub repository language statistics
+.agent/** linguist-vendored
